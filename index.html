@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details Database</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Student Details Database</h1>
+	<form method="post" action="insert.php">
+		<label for="pin">Pin Number:</label>
+		<input type="text" id="pin" name="pin" required>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="section">Section:</label>
+		<input type="text" id="section" name="section" required>
+		<label for="branch">Branch:</label>
+		<input type="text" id="branch" name="branch" required>
+		<button type="submit">Add Student</button>
+	</form>
+	<br>
+	<form method="post" action="delete.php">
+		<label for="pin">Pin Number:</label>
+		<input type="text" id="pin" name="pin" required>
+		<button type="submit">Delete Student</button>
+	</form>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th>Pin Number</th>
+				<th>Name</th>
+				<th>Section</th>
+				<th>Branch</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php include 'select.php'; ?>
+		</tbody>
+	</table>
+</body>
+</html>

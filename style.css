@@ -1,0 +1,40 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+form {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+button[type="submit"] {
+	padding: 5px 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
